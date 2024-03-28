@@ -14,9 +14,9 @@
 							<el-option v-for="(item,index) in xingbieOptions" v-bind:key="index" :label="item" :value="item"></el-option>
 						</el-select>
 					</div>
-					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}' class="select" label="省" prop="sheng">
-						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">省</label>
-						<el-select clearable v-model="searchForm.sheng" placeholder="请选择省" >
+					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}' class="select" label="乡镇" prop="sheng">
+						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">乡镇</label>
+						<el-select clearable v-model="searchForm.sheng" placeholder="请选择乡镇" >
 							<el-option v-for="(item,index) in shengOptions" v-bind:key="index" :label="item" :value="item"></el-option>
 						</el-select>
 					</div>
@@ -26,15 +26,15 @@
 							<el-option v-for="(item,index) in pinkundengjiOptions" v-bind:key="index" :label="item" :value="item"></el-option>
 						</el-select>
 					</div>
-					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}' class="select" label="扶贫政策" prop="fupinzhengce">
-						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">扶贫政策</label>
-						<el-select clearable v-model="searchForm.fupinzhengce" placeholder="请选择扶贫政策" >
+					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}' class="select" label="帮扶政策" prop="fupinzhengce">
+						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">帮扶政策</label>
+						<el-select clearable v-model="searchForm.fupinzhengce" placeholder="请选择帮扶政策" >
 							<el-option v-for="(item,index) in fupinzhengceOptions" v-bind:key="index" :label="item" :value="item"></el-option>
 						</el-select>
 					</div>
-					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}' class="select" label="扶贫结果" prop="fupinjieguo">
-						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">扶贫结果</label>
-						<el-select clearable v-model="searchForm.fupinjieguo" placeholder="请选择扶贫结果" >
+					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}' class="select" label="帮扶结果" prop="fupinjieguo">
+						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">帮扶结果</label>
+						<el-select clearable v-model="searchForm.fupinjieguo" placeholder="请选择帮扶结果" >
 							<el-option v-for="(item,index) in fupinjieguoOptions" v-bind:key="index" :label="item" :value="item"></el-option>
 						</el-select>
 					</div>
@@ -76,13 +76,13 @@
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"14px","color":"#8b9ab3","height":"40px"}'></span>
 						贫困等级统计
 					</el-button>
-					<el-button class="btn18" v-if="isAuth('fupinxinxi','扶贫政策统计')" type="success" @click="chartDialog3()">
+					<el-button class="btn18" v-if="isAuth('fupinxinxi','帮扶政策统计')" type="success" @click="chartDialog3()">
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"14px","color":"#8b9ab3","height":"40px"}'></span>
-						扶贫政策统计
+						帮扶政策统计
 					</el-button>
-					<el-button class="btn18" v-if="isAuth('fupinxinxi','扶贫结果统计')" type="success" @click="chartDialog4()">
+					<el-button class="btn18" v-if="isAuth('fupinxinxi','帮扶结果统计')" type="success" @click="chartDialog4()">
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"14px","color":"#8b9ab3","height":"40px"}'></span>
-						扶贫结果统计
+						帮扶结果统计
 					</el-button>
 					<el-button class="btn18" v-if="isAuth('fupinxinxi','贫困人数统计')" type="success" @click="chartDialog5()">
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"14px","color":"#8b9ab3","height":"40px"}'></span>
@@ -135,7 +135,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="sheng"
-						label="省">
+						label="乡镇">
 						<template slot-scope="scope">
 							{{scope.row.sheng}}
 						</template>
@@ -216,7 +216,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="fupinzhengce"
-						label="扶贫政策">
+						label="帮扶政策">
 						<template slot-scope="scope">
 							{{scope.row.fupinzhengce}}
 						</template>
@@ -227,7 +227,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="fupinjieguo"
-						label="扶贫结果">
+						label="帮扶结果">
 						<template slot-scope="scope">
 							{{scope.row.fupinjieguo}}
 						</template>
@@ -637,7 +637,7 @@ import AddOrUpdate from "./add-or-update";
                 var option = {};
                 option = {
                         title: {
-                            text: '扶贫政策统计',
+                            text: '帮扶政策统计',
                             left: 'center'
                         },
                         legend: {
@@ -711,7 +711,7 @@ import AddOrUpdate from "./add-or-update";
 				}
 				option = {
 					title: {
-					    text: '扶贫结果统计',
+					    text: '帮扶结果统计',
 					    left: 'center',
 					    top: 'top'
 					},

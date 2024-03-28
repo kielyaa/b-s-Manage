@@ -9,7 +9,7 @@
 		<div :style='{"padding":"20px 20px 0","display":"flex","height":"calc(100vh - 66px)"}'>
 			<div :style='{"width":"30%","flexWrap":"wrap","display":"flex"}'>
 				<div class="tables">
-					<div :style='{"margin":"0 0 0px 0","color":"#fff","textAlign":"center","background":"rgba(255,255,255,0)","width":"100%","lineHeight":"40px","fontSize":"14px","height":"40px"}'>扶贫信息(可支配占比TOP10)</div>
+					<div :style='{"margin":"0 0 0px 0","color":"#fff","textAlign":"center","background":"rgba(255,255,255,0)","width":"100%","lineHeight":"40px","fontSize":"14px","height":"40px"}'>帮扶信息(可支配占比TOP10)</div>
 					<el-table :data="boardDataList" border :stripe="false" :style='{"width":"100%","padding":"0","borderColor":"#044bbe","borderStyle":"solid","borderWidth":"1px 0 0 1px","background":"none"}'>
 						<el-table-column :resizable="true" :sortable="false" prop="xingming" label="姓名"/>
 						</el-table-column>
@@ -33,7 +33,7 @@
 				<div class="echarts1">
 					<div :style='{"width":"100%","textAlign":"center","height":"15%"}'>
 						<div :style='{"color":"#fff","fontSize":"16px"}'>
-							扶贫结果统计
+							帮扶结果统计
 						</div>
 					</div>
 					<div :style='{"width":"100%","height":"85%"}'>
@@ -58,7 +58,7 @@
 				<div class="echarts3">
 					<div :style='{"width":"100%","textAlign":"center","height":"15%"}'>
 						<div :style='{"color":"#fff","fontSize":"16px"}'>
-							扶贫政策统计
+							帮扶政策统计
 						</div>
 					</div>
 					<div :style='{"width":"100%","height":"85%"}'>
@@ -87,7 +87,7 @@
 					<div :style='{"width":"100%","alignItems":"center","background":"rgba(255,255,255,0)","justifyContent":"center","display":"flex"}'>
 						<div :style='{"width":"12px","margin":"0 0 0 20px","background":"#2097db","height":"12px"}'></div>
 						<div :style='{"padding":"0 20px","alignItems":"center","flex":"1","justifyContent":"space-between","display":"flex"}'>
-							<div :style='{"lineHeight":"1.8","fontSize":"inherit","color":"inherit","height":"auto"}'>扶贫信息总数</div>
+							<div :style='{"lineHeight":"1.8","fontSize":"inherit","color":"inherit","height":"auto"}'>帮扶信息总数</div>
 							<div :style='{"lineHeight":"1.8","fontSize":"16px","color":"#fff","fontWeight":"bold","height":"auto"}'>{{fupinxinxiCount}}</div>
 						</div>
 					</div>
@@ -547,7 +547,7 @@ export default {
                 }
                 var option = {};
 				let titleObj = this.pie2?this.pie2.title:this.pie.title
-				titleObj.text = '扶贫政策统计'
+				titleObj.text = '帮扶政策统计'
 				
 				const legendObj = this.pie2?this.pie2.legend:this.pie.legend
 				
@@ -621,7 +621,7 @@ export default {
                 }
                 var option = {};
 				let titleObj = this.gauge.title
-				titleObj.text = '扶贫结果统计'
+				titleObj.text = '帮扶结果统计'
 				
 				for(let x=0;x<pArray.length;x++){
 					pArray[x] = Object.assign(pArray[x], {

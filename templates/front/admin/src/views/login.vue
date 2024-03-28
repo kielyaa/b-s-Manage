@@ -2,7 +2,7 @@
   <div>
     <div class="container" :style='{"minHeight":"100vh","width":"100%","alignItems":"center","background":"url(http://codegen.caihongy.cn/20240131/34b914ba171d428788f8a9907f1763f7.png)no-repeat center center / cover","justifyContent":"center","display":"flex"}'>
       <el-form :style='{"padding":"0 20px 0px 210px","margin":"4.2% 0 0 0","borderRadius":"10px","background":"url(http://codegen.caihongy.cn/20240131/265fafe387a0422a9378e317f182ba61.png) no-repeat left top / 100% 100%","flexDirection":"column","display":"flex","height":"auto"}'>
-        <div v-if="true" :style='{"padding":"20px","color":"#999=","textAlign":"center","background":"#fff","letterSpacing":"3px","fontSize":"18px","fontWeight":"400"}' class="title-container">基于Python的我国扶贫（帮扶）数据信息管理系统登录</div>
+        <div v-if="true" :style='{"padding":"20px","color":"#999=","textAlign":"center","background":"#fff","letterSpacing":"3px","fontSize":"18px","fontWeight":"400"}' class="title-container">基于Python的我国县级帮扶信息管理系统（永顺县）登录</div>
         <div v-if="loginType==1" class="list-item" :style='{"padding":"10px 0 10px 40px","flexWrap":"wrap","background":"#fff","display":"flex"}'>
           <div v-if="true" class="lable" :style='{"width":"40%","lineHeight":"44px","fontSize":"16px","color":"#999999","fontWeight":"400"}'>用户名：</div>
           <input :style='{"borderColor":"#999","color":"#8696b0","outlineOffset":"4px","borderWidth":"0 0 1px 0","width":"300px","fontSize":"14px","borderStyle":"solid","height":"44px"}' placeholder="请输入用户名" name="username" type="text" v-model="rulesForm.username">

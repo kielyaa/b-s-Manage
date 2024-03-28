@@ -64,7 +64,7 @@ CREATE TABLE `fupinxinxi` (
   `xingming` varchar(200) NOT NULL COMMENT '姓名',
   `xingbie` varchar(200) NOT NULL COMMENT '性别',
   `touxiang` longtext COMMENT '头像',
-  `sheng` varchar(200) NOT NULL COMMENT '省',
+  `sheng` varchar(200) NOT NULL COMMENT '乡镇',
   `jiatingzhuzhi` varchar(200) NOT NULL COMMENT '家庭住址',
   `chengyuanshuliang` int(11) DEFAULT NULL COMMENT '成员数量',
   `yuannianshouru` double DEFAULT NULL COMMENT '原年收入',
@@ -73,12 +73,12 @@ CREATE TABLE `fupinxinxi` (
   `xiankezhipeishouru` double DEFAULT NULL COMMENT '现可支配收入',
   `kezhipeizhanbi` double DEFAULT NULL COMMENT '可支配占比',
   `pinkundengji` varchar(200) NOT NULL COMMENT '贫困等级',
-  `fupinzhengce` varchar(200) NOT NULL COMMENT '扶贫政策',
-  `fupinneirong` longtext COMMENT '扶贫内容',
-  `fupinjieguo` varchar(200) NOT NULL COMMENT '扶贫结果',
+  `fupinzhengce` varchar(200) NOT NULL COMMENT '帮扶政策',
+  `fupinneirong` longtext COMMENT '帮扶内容',
+  `fupinjieguo` varchar(200) NOT NULL COMMENT '帮扶结果',
   `dengjiriqi` date DEFAULT NULL COMMENT '登记日期',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COMMENT='扶贫信息';
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COMMENT='帮扶信息';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `fupinxinxi` (
 
 LOCK TABLES `fupinxinxi` WRITE;
 /*!40000 ALTER TABLE `fupinxinxi` DISABLE KEYS */;
-INSERT INTO `fupinxinxi` VALUES (31,'2024-02-26 14:04:03','姓名1','男','upload/fupinxinxi_touxiang1.jpg,upload/fupinxinxi_touxiang2.jpg,upload/fupinxinxi_touxiang3.jpg','省1','家庭住址1',1,1,1,1,1,1,'绝对贫困','扶贫政策1','扶贫内容1','已脱贫','2024-02-26'),(32,'2024-02-26 14:04:03','姓名2','男','upload/fupinxinxi_touxiang2.jpg,upload/fupinxinxi_touxiang3.jpg,upload/fupinxinxi_touxiang4.jpg','省2','家庭住址2',2,2,2,2,2,2,'绝对贫困','扶贫政策2','扶贫内容2','已脱贫','2024-02-26'),(33,'2024-02-26 14:04:03','姓名3','男','upload/fupinxinxi_touxiang3.jpg,upload/fupinxinxi_touxiang4.jpg,upload/fupinxinxi_touxiang5.jpg','省3','家庭住址3',3,3,3,3,3,3,'绝对贫困','扶贫政策3','扶贫内容3','已脱贫','2024-02-26'),(34,'2024-02-26 14:04:03','姓名4','男','upload/fupinxinxi_touxiang4.jpg,upload/fupinxinxi_touxiang5.jpg,upload/fupinxinxi_touxiang6.jpg','省4','家庭住址4',4,4,4,4,4,4,'绝对贫困','扶贫政策4','扶贫内容4','已脱贫','2024-02-26'),(35,'2024-02-26 14:04:03','姓名5','男','upload/fupinxinxi_touxiang5.jpg,upload/fupinxinxi_touxiang6.jpg,upload/fupinxinxi_touxiang7.jpg','省5','家庭住址5',5,5,5,5,5,5,'绝对贫困','扶贫政策5','扶贫内容5','已脱贫','2024-02-26'),(36,'2024-02-26 14:04:03','姓名6','男','upload/fupinxinxi_touxiang6.jpg,upload/fupinxinxi_touxiang7.jpg,upload/fupinxinxi_touxiang8.jpg','省6','家庭住址6',6,6,6,6,6,6,'绝对贫困','扶贫政策6','扶贫内容6','已脱贫','2024-02-26'),(37,'2024-02-26 14:04:03','姓名7','男','upload/fupinxinxi_touxiang7.jpg,upload/fupinxinxi_touxiang8.jpg,upload/fupinxinxi_touxiang9.jpg','省7','家庭住址7',7,7,7,7,7,7,'绝对贫困','扶贫政策7','扶贫内容7','已脱贫','2024-02-26'),(38,'2024-02-26 14:04:03','姓名8','男','upload/fupinxinxi_touxiang8.jpg,upload/fupinxinxi_touxiang9.jpg,upload/fupinxinxi_touxiang10.jpg','省8','家庭住址8',8,8,8,8,8,8,'绝对贫困','扶贫政策8','扶贫内容8','已脱贫','2024-02-26');
+INSERT INTO `fupinxinxi` VALUES (31,'2024-02-26 14:04:03','姓名1','男','upload/fupinxinxi_touxiang1.jpg,upload/fupinxinxi_touxiang2.jpg,upload/fupinxinxi_touxiang3.jpg','乡镇1','家庭住址1',1,1,1,1,1,1,'绝对贫困','帮扶政策1','帮扶内容1','已脱贫','2024-02-26'),(32,'2024-02-26 14:04:03','姓名2','男','upload/fupinxinxi_touxiang2.jpg,upload/fupinxinxi_touxiang3.jpg,upload/fupinxinxi_touxiang4.jpg','乡镇2','家庭住址2',2,2,2,2,2,2,'绝对贫困','帮扶政策2','帮扶内容2','已脱贫','2024-02-26'),(33,'2024-02-26 14:04:03','姓名3','男','upload/fupinxinxi_touxiang3.jpg,upload/fupinxinxi_touxiang4.jpg,upload/fupinxinxi_touxiang5.jpg','乡镇3','家庭住址3',3,3,3,3,3,3,'绝对贫困','帮扶政策3','帮扶内容3','已脱贫','2024-02-26'),(34,'2024-02-26 14:04:03','姓名4','男','upload/fupinxinxi_touxiang4.jpg,upload/fupinxinxi_touxiang5.jpg,upload/fupinxinxi_touxiang6.jpg','乡镇4','家庭住址4',4,4,4,4,4,4,'绝对贫困','帮扶政策4','帮扶内容4','已脱贫','2024-02-26'),(35,'2024-02-26 14:04:03','姓名5','男','upload/fupinxinxi_touxiang5.jpg,upload/fupinxinxi_touxiang6.jpg,upload/fupinxinxi_touxiang7.jpg','乡镇5','家庭住址5',5,5,5,5,5,5,'绝对贫困','帮扶政策5','帮扶内容5','已脱贫','2024-02-26'),(36,'2024-02-26 14:04:03','姓名6','男','upload/fupinxinxi_touxiang6.jpg,upload/fupinxinxi_touxiang7.jpg,upload/fupinxinxi_touxiang8.jpg','乡镇6','家庭住址6',6,6,6,6,6,6,'绝对贫困','帮扶政策6','帮扶内容6','已脱贫','2024-02-26'),(37,'2024-02-26 14:04:03','姓名7','男','upload/fupinxinxi_touxiang7.jpg,upload/fupinxinxi_touxiang8.jpg,upload/fupinxinxi_touxiang9.jpg','乡镇7','家庭住址7',7,7,7,7,7,7,'绝对贫困','帮扶政策7','帮扶内容7','已脱贫','2024-02-26'),(38,'2024-02-26 14:04:03','姓名8','男','upload/fupinxinxi_touxiang8.jpg,upload/fupinxinxi_touxiang9.jpg,upload/fupinxinxi_touxiang10.jpg','乡镇8','家庭住址8',8,8,8,8,8,8,'绝对贫困','帮扶政策8','帮扶内容8','已脱贫','2024-02-26');
 /*!40000 ALTER TABLE `fupinxinxi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,12 +101,12 @@ DROP TABLE IF EXISTS `fupinzhengce`;
 CREATE TABLE `fupinzhengce` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `fupinzhengce` varchar(200) NOT NULL COMMENT '扶贫政策',
+  `fupinzhengce` varchar(200) NOT NULL COMMENT '帮扶政策',
   `shiyongduixiang` varchar(200) DEFAULT NULL COMMENT '适用对象',
   `zhengceneirong` longtext NOT NULL COMMENT '政策内容',
   `banburiqi` date DEFAULT NULL COMMENT '颁布日期',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COMMENT='扶贫政策';
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COMMENT='帮扶政策';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -115,7 +115,7 @@ CREATE TABLE `fupinzhengce` (
 
 LOCK TABLES `fupinzhengce` WRITE;
 /*!40000 ALTER TABLE `fupinzhengce` DISABLE KEYS */;
-INSERT INTO `fupinzhengce` VALUES (21,'2024-02-26 14:04:03','扶贫政策1','适用对象1','政策内容1','2024-02-26'),(22,'2024-02-26 14:04:03','扶贫政策2','适用对象2','政策内容2','2024-02-26'),(23,'2024-02-26 14:04:03','扶贫政策3','适用对象3','政策内容3','2024-02-26'),(24,'2024-02-26 14:04:03','扶贫政策4','适用对象4','政策内容4','2024-02-26'),(25,'2024-02-26 14:04:03','扶贫政策5','适用对象5','政策内容5','2024-02-26'),(26,'2024-02-26 14:04:03','扶贫政策6','适用对象6','政策内容6','2024-02-26'),(27,'2024-02-26 14:04:03','扶贫政策7','适用对象7','政策内容7','2024-02-26'),(28,'2024-02-26 14:04:03','扶贫政策8','适用对象8','政策内容8','2024-02-26');
+INSERT INTO `fupinzhengce` VALUES (21,'2024-02-26 14:04:03','帮扶政策1','适用对象1','政策内容1','2024-02-26'),(22,'2024-02-26 14:04:03','帮扶政策2','适用对象2','政策内容2','2024-02-26'),(23,'2024-02-26 14:04:03','帮扶政策3','适用对象3','政策内容3','2024-02-26'),(24,'2024-02-26 14:04:03','帮扶政策4','适用对象4','政策内容4','2024-02-26'),(25,'2024-02-26 14:04:03','帮扶政策5','适用对象5','政策内容5','2024-02-26'),(26,'2024-02-26 14:04:03','帮扶政策6','适用对象6','政策内容6','2024-02-26'),(27,'2024-02-26 14:04:03','帮扶政策7','适用对象7','政策内容7','2024-02-26'),(28,'2024-02-26 14:04:03','帮扶政策8','适用对象8','政策内容8','2024-02-26');
 /*!40000 ALTER TABLE `fupinzhengce` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -129,9 +129,9 @@ DROP TABLE IF EXISTS `sheng`;
 CREATE TABLE `sheng` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `addtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `sheng` varchar(200) NOT NULL COMMENT '省',
+  `sheng` varchar(200) NOT NULL COMMENT '乡镇',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COMMENT='省';
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COMMENT='乡镇';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -140,7 +140,7 @@ CREATE TABLE `sheng` (
 
 LOCK TABLES `sheng` WRITE;
 /*!40000 ALTER TABLE `sheng` DISABLE KEYS */;
-INSERT INTO `sheng` VALUES (11,'2024-02-26 14:04:03','省1'),(12,'2024-02-26 14:04:03','省2'),(13,'2024-02-26 14:04:03','省3'),(14,'2024-02-26 14:04:03','省4'),(15,'2024-02-26 14:04:03','省5'),(16,'2024-02-26 14:04:03','省6'),(17,'2024-02-26 14:04:03','省7'),(18,'2024-02-26 14:04:03','省8');
+INSERT INTO `sheng` VALUES (11,'2024-02-26 14:04:03','乡镇1'),(12,'2024-02-26 14:04:03','乡镇2'),(13,'2024-02-26 14:04:03','乡镇3'),(14,'2024-02-26 14:04:03','乡镇4'),(15,'2024-02-26 14:04:03','乡镇5'),(16,'2024-02-26 14:04:03','乡镇6'),(17,'2024-02-26 14:04:03','乡镇7'),(18,'2024-02-26 14:04:03','乡镇8');
 /*!40000 ALTER TABLE `sheng` ENABLE KEYS */;
 UNLOCK TABLES;
 

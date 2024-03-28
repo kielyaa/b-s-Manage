@@ -5,8 +5,8 @@
 			<el-form class="center-form-pv" :style='{"margin":"0 0 20px"}' :inline="true" :model="searchForm">
 				<el-row :style='{"display":"block"}' >
 					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}'>
-						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">扶贫政策</label>
-						<el-input v-model="searchForm.fupinzhengce" placeholder="扶贫政策" @keydown.enter.native="search()" clearable></el-input>
+						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">帮扶政策</label>
+						<el-input v-model="searchForm.fupinzhengce" placeholder="帮扶政策" @keydown.enter.native="search()" clearable></el-input>
 					</div>
 					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}'>
 						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">政策内容</label>
@@ -47,7 +47,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="fupinzhengce"
-						label="扶贫政策">
+						label="帮扶政策">
 						<template slot-scope="scope">
 							{{scope.row.fupinzhengce}}
 						</template>

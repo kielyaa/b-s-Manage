@@ -52,17 +52,17 @@ export const routes = [{
       }
       ,{
 	path: '/fupinxinxi',
-        name: '扶贫信息',
+        name: '帮扶信息',
         component: fupinxinxi
       }
       ,{
 	path: '/fupinzhengce',
-        name: '扶贫政策',
+        name: '帮扶政策',
         component: fupinzhengce
       }
       ,{
 	path: '/sheng',
-        name: '省',
+        name: '乡镇',
         component: sheng
       }
     ]

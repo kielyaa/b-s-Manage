@@ -11,7 +11,7 @@
 			</div>
 			<div :style='{"width":"160px","alignItems":"center","flexDirection":"column","justifyContent":"center","display":"flex"}'>
 				<div :style='{"margin":"5px 0","lineHeight":"24px","fontSize":"20px","color":"#8d9cb5","fontWeight":"bold","height":"24px"}'>{{fupinxinxiCount}}</div>
-				<div :style='{"margin":"5px 0","lineHeight":"24px","fontSize":"16px","color":"#8d9cb5","height":"24px"}'>扶贫信息总数</div>
+				<div :style='{"margin":"5px 0","lineHeight":"24px","fontSize":"16px","color":"#8d9cb5","height":"24px"}'>帮扶信息总数</div>
 			</div>
 		</div>
 	</div>
@@ -369,7 +369,7 @@ export default {
                 }
                 var option = {};
 				let titleObj = this.pie.title
-				titleObj.text = '扶贫政策统计'
+				titleObj.text = '帮扶政策统计'
 				
 				const legendObj = this.pie.legend
 				let tooltipObj = {trigger: 'item',formatter: '{b} : {c} ({d}%)'}
@@ -437,7 +437,7 @@ export default {
                 }
                 var option = {};
 				let titleObj = this.gauge.title
-				titleObj.text = '扶贫结果统计'
+				titleObj.text = '帮扶结果统计'
 				
 				let tooltipObj = {trigger: 'item',formatter: '{b} : {c}'}
 				tooltipObj = Object.assign(tooltipObj , this.gauge.tooltip?this.gauge.tooltip:{})

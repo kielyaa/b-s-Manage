@@ -9,11 +9,11 @@
 			label-width="180px"
 		>
 			<template >
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="省" prop="sheng">
-					<el-input v-model="ruleForm.sheng" placeholder="省" clearable  :readonly="ro.sheng"></el-input>
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="乡镇" prop="sheng">
+					<el-input v-model="ruleForm.sheng" placeholder="乡镇" clearable  :readonly="ro.sheng"></el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="省" prop="sheng">
-					<el-input v-model="ruleForm.sheng" placeholder="省" readonly></el-input>
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="乡镇" prop="sheng">
+					<el-input v-model="ruleForm.sheng" placeholder="乡镇" readonly></el-input>
 				</el-form-item>
 			</template>
 			<el-form-item :style='{"padding":"0","margin":"0"}' class="btn">
@@ -122,7 +122,7 @@ export default {
 			
 			rules: {
 				sheng: [
-					{ required: true, message: '省不能为空', trigger: 'blur' },
+					{ required: true, message: '乡镇不能为空', trigger: 'blur' },
 				],
 			}
 		};

@@ -25,13 +25,13 @@ class sheng(BaseModel):
     __foreEndList__='否'#表属性[foreEndList]前台list:和后台默认的list列表页相似,只是摆在前台,否:指没有此页,是:表示有此页(不需要登陆即可查看),前要登:表示有此页且需要登陆后才能查看
     __isAdmin__='否'#表属性isAdmin=”是”,刷出来的用户表也是管理员，即page和list可以查看所有人的考试记录(同时应用于其他表)
     addtime = models.DateTimeField(auto_now_add=False, verbose_name=u'创建时间')
-    sheng=models.CharField ( max_length=255,null=False, unique=False, verbose_name='省' )
+    sheng=models.CharField ( max_length=255,null=False, unique=False, verbose_name='乡镇' )
     '''
     sheng=VARCHAR
     '''
     class Meta:
         db_table = 'sheng'
-        verbose_name = verbose_name_plural = '省'
+        verbose_name = verbose_name_plural = '乡镇'
 class fupinzhengce(BaseModel):
     __doc__ = u'''fupinzhengce'''
     __tablename__ = 'fupinzhengce'
@@ -49,7 +49,7 @@ class fupinzhengce(BaseModel):
     __foreEndList__='否'#表属性[foreEndList]前台list:和后台默认的list列表页相似,只是摆在前台,否:指没有此页,是:表示有此页(不需要登陆即可查看),前要登:表示有此页且需要登陆后才能查看
     __isAdmin__='否'#表属性isAdmin=”是”,刷出来的用户表也是管理员，即page和list可以查看所有人的考试记录(同时应用于其他表)
     addtime = models.DateTimeField(auto_now_add=False, verbose_name=u'创建时间')
-    fupinzhengce=models.CharField ( max_length=255,null=False, unique=False, verbose_name='扶贫政策' )
+    fupinzhengce=models.CharField ( max_length=255,null=False, unique=False, verbose_name='帮扶政策' )
     shiyongduixiang=models.CharField ( max_length=255, null=True, unique=False, verbose_name='适用对象' )
     zhengceneirong=models.TextField   ( null=False, unique=False, verbose_name='政策内容' )
     banburiqi=models.DateField   (  null=True, unique=False, verbose_name='颁布日期' )
@@ -61,7 +61,7 @@ class fupinzhengce(BaseModel):
     '''
     class Meta:
         db_table = 'fupinzhengce'
-        verbose_name = verbose_name_plural = '扶贫政策'
+        verbose_name = verbose_name_plural = '帮扶政策'
 class fupinxinxi(BaseModel):
     __doc__ = u'''fupinxinxi'''
     __tablename__ = 'fupinxinxi'
@@ -82,7 +82,7 @@ class fupinxinxi(BaseModel):
     xingming=models.CharField ( max_length=255,null=False, unique=False, verbose_name='姓名' )
     xingbie=models.CharField ( max_length=255,null=False, unique=False, verbose_name='性别' )
     touxiang=models.TextField   (  null=True, unique=False, verbose_name='头像' )
-    sheng=models.CharField ( max_length=255,null=False, unique=False, verbose_name='省' )
+    sheng=models.CharField ( max_length=255,null=False, unique=False, verbose_name='乡镇' )
     jiatingzhuzhi=models.CharField ( max_length=255,null=False, unique=False, verbose_name='家庭住址' )
     chengyuanshuliang=models.IntegerField  (  null=True, unique=False, verbose_name='成员数量' )
     yuannianshouru=models.FloatField   (  null=True, unique=False, verbose_name='原年收入' )
@@ -91,9 +91,9 @@ class fupinxinxi(BaseModel):
     xiankezhipeishouru=models.FloatField   (  null=True, unique=False, verbose_name='现可支配收入' )
     kezhipeizhanbi=models.FloatField   (  null=True, unique=False, verbose_name='可支配占比' )
     pinkundengji=models.CharField ( max_length=255,null=False, unique=False, verbose_name='贫困等级' )
-    fupinzhengce=models.CharField ( max_length=255,null=False, unique=False, verbose_name='扶贫政策' )
-    fupinneirong=models.TextField   (  null=True, unique=False, verbose_name='扶贫内容' )
-    fupinjieguo=models.CharField ( max_length=255,null=False, unique=False, verbose_name='扶贫结果' )
+    fupinzhengce=models.CharField ( max_length=255,null=False, unique=False, verbose_name='帮扶政策' )
+    fupinneirong=models.TextField   (  null=True, unique=False, verbose_name='帮扶内容' )
+    fupinjieguo=models.CharField ( max_length=255,null=False, unique=False, verbose_name='帮扶结果' )
     dengjiriqi=models.DateField   (  null=True, unique=False, verbose_name='登记日期' )
     '''
     xingming=VARCHAR
@@ -115,7 +115,7 @@ class fupinxinxi(BaseModel):
     '''
     class Meta:
         db_table = 'fupinxinxi'
-        verbose_name = verbose_name_plural = '扶贫信息'
+        verbose_name = verbose_name_plural = '帮扶信息'
 class systemintro(BaseModel):
     __doc__ = u'''systemintro'''
     __tablename__ = 'systemintro'

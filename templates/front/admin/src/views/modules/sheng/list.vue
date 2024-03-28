@@ -5,8 +5,8 @@
 			<el-form class="center-form-pv" :style='{"margin":"0 0 20px"}' :inline="true" :model="searchForm">
 				<el-row :style='{"display":"block"}' >
 					<div :style='{"margin":"0 10px 0 0","display":"inline-block"}'>
-						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">省</label>
-						<el-input v-model="searchForm.sheng" placeholder="省" @keydown.enter.native="search()" clearable></el-input>
+						<label :style='{"margin":"0 10px 0 0","color":"#666","display":"none","lineHeight":"40px","fontSize":"14px","fontWeight":"500","height":"40px"}' class="item-label">乡镇</label>
+						<el-input v-model="searchForm.sheng" placeholder="乡镇" @keydown.enter.native="search()" clearable></el-input>
 					</div>
 					<el-button class="search" type="success" @click="search()">
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"16px","color":"#fff","height":"40px"}'></span>
@@ -43,7 +43,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="sheng"
-						label="省">
+						label="乡镇">
 						<template slot-scope="scope">
 							{{scope.row.sheng}}
 						</template>

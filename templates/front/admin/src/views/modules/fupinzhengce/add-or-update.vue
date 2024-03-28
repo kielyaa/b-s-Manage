@@ -9,11 +9,11 @@
 			label-width="180px"
 		>
 			<template >
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="扶贫政策" prop="fupinzhengce">
-					<el-input v-model="ruleForm.fupinzhengce" placeholder="扶贫政策" clearable  :readonly="ro.fupinzhengce"></el-input>
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="帮扶政策" prop="fupinzhengce">
+					<el-input v-model="ruleForm.fupinzhengce" placeholder="帮扶政策" clearable  :readonly="ro.fupinzhengce"></el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="扶贫政策" prop="fupinzhengce">
-					<el-input v-model="ruleForm.fupinzhengce" placeholder="扶贫政策" readonly></el-input>
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="帮扶政策" prop="fupinzhengce">
+					<el-input v-model="ruleForm.fupinzhengce" placeholder="帮扶政策" readonly></el-input>
 				</el-form-item>
 				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="适用对象" prop="shiyongduixiang">
 					<el-input v-model="ruleForm.shiyongduixiang" placeholder="适用对象" clearable  :readonly="ro.shiyongduixiang"></el-input>
@@ -159,7 +159,7 @@ export default {
 			
 			rules: {
 				fupinzhengce: [
-					{ required: true, message: '扶贫政策不能为空', trigger: 'blur' },
+					{ required: true, message: '帮扶政策不能为空', trigger: 'blur' },
 				],
 				shiyongduixiang: [
 				],

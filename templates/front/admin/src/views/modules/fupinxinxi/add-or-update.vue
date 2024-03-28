@@ -43,8 +43,8 @@
 					<img v-if="ruleForm.touxiang.substring(0,4)=='http'" class="upload-img" style="margin-right:20px;" v-bind:key="index" :src="ruleForm.touxiang.split(',')[0]" width="100" height="100">
 					<img v-else class="upload-img" style="margin-right:20px;" v-bind:key="index" v-for="(item,index) in ruleForm.touxiang.split(',')" :src="$base.url+item" width="100" height="100">
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="select" v-if="type!='info'"  label="省" prop="sheng">
-					<el-select :disabled="ro.sheng" v-model="ruleForm.sheng" placeholder="请选择省" >
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="select" v-if="type!='info'"  label="乡镇" prop="sheng">
+					<el-select :disabled="ro.sheng" v-model="ruleForm.sheng" placeholder="请选择乡镇" >
 						<el-option
 							v-for="(item,index) in shengOptions"
 							v-bind:key="index"
@@ -53,9 +53,9 @@
 						</el-option>
 					</el-select>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="省" prop="sheng">
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="乡镇" prop="sheng">
 					<el-input v-model="ruleForm.sheng"
-						placeholder="省" readonly></el-input>
+						placeholder="乡镇" readonly></el-input>
 				</el-form-item>
 				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="家庭住址" prop="jiatingzhuzhi">
 					<el-input v-model="ruleForm.jiatingzhuzhi" placeholder="家庭住址" clearable  :readonly="ro.jiatingzhuzhi"></el-input>
@@ -113,8 +113,8 @@
 					<el-input v-model="ruleForm.pinkundengji"
 						placeholder="贫困等级" readonly></el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="select" v-if="type!='info'"  label="扶贫政策" prop="fupinzhengce">
-					<el-select :disabled="ro.fupinzhengce" v-model="ruleForm.fupinzhengce" placeholder="请选择扶贫政策" >
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="select" v-if="type!='info'"  label="帮扶政策" prop="fupinzhengce">
+					<el-select :disabled="ro.fupinzhengce" v-model="ruleForm.fupinzhengce" placeholder="请选择帮扶政策" >
 						<el-option
 							v-for="(item,index) in fupinzhengceOptions"
 							v-bind:key="index"
@@ -123,12 +123,12 @@
 						</el-option>
 					</el-select>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="扶贫政策" prop="fupinzhengce">
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="帮扶政策" prop="fupinzhengce">
 					<el-input v-model="ruleForm.fupinzhengce"
-						placeholder="扶贫政策" readonly></el-input>
+						placeholder="帮扶政策" readonly></el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="select" v-if="type!='info'"  label="扶贫结果" prop="fupinjieguo">
-					<el-select :disabled="ro.fupinjieguo" v-model="ruleForm.fupinjieguo" placeholder="请选择扶贫结果" >
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="select" v-if="type!='info'"  label="帮扶结果" prop="fupinjieguo">
+					<el-select :disabled="ro.fupinjieguo" v-model="ruleForm.fupinjieguo" placeholder="请选择帮扶结果" >
 						<el-option
 							v-for="(item,index) in fupinjieguoOptions"
 							v-bind:key="index"
@@ -137,9 +137,9 @@
 						</el-option>
 					</el-select>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="扶贫结果" prop="fupinjieguo">
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="帮扶结果" prop="fupinjieguo">
 					<el-input v-model="ruleForm.fupinjieguo"
-						placeholder="扶贫结果" readonly></el-input>
+						placeholder="帮扶结果" readonly></el-input>
 				</el-form-item>
 				<el-form-item :style='{"margin":"0 0 20px 0"}' class="date" v-if="type!='info'" label="登记日期" prop="dengjiriqi">
 					<el-date-picker
@@ -155,16 +155,16 @@
 					<el-input v-model="ruleForm.dengjiriqi" placeholder="登记日期" readonly></el-input>
 				</el-form-item>
 			</template>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="textarea" v-if="type!='info'" label="扶贫内容" prop="fupinneirong">
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="textarea" v-if="type!='info'" label="帮扶内容" prop="fupinneirong">
 					<el-input
 					  style="min-width: 200px; max-width: 600px;"
 					  type="textarea"
 					  :rows="8"
-					  placeholder="扶贫内容"
+					  placeholder="帮扶内容"
 					  v-model="ruleForm.fupinneirong" >
 					</el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else-if="ruleForm.fupinneirong" label="扶贫内容" prop="fupinneirong">
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else-if="ruleForm.fupinneirong" label="帮扶内容" prop="fupinneirong">
 					<span :style='{"fontSize":"14px","lineHeight":"40px","color":"#333","fontWeight":"500","display":"inline-block"}'>{{ruleForm.fupinneirong}}</span>
 				</el-form-item>
 			<el-form-item :style='{"padding":"0","margin":"0"}' class="btn">
@@ -316,7 +316,7 @@ export default {
 				touxiang: [
 				],
 				sheng: [
-					{ required: true, message: '省不能为空', trigger: 'blur' },
+					{ required: true, message: '乡镇不能为空', trigger: 'blur' },
 				],
 				jiatingzhuzhi: [
 					{ required: true, message: '家庭住址不能为空', trigger: 'blur' },
@@ -343,12 +343,12 @@ export default {
 					{ required: true, message: '贫困等级不能为空', trigger: 'blur' },
 				],
 				fupinzhengce: [
-					{ required: true, message: '扶贫政策不能为空', trigger: 'blur' },
+					{ required: true, message: '帮扶政策不能为空', trigger: 'blur' },
 				],
 				fupinneirong: [
 				],
 				fupinjieguo: [
-					{ required: true, message: '扶贫结果不能为空', trigger: 'blur' },
+					{ required: true, message: '帮扶结果不能为空', trigger: 'blur' },
 				],
 				dengjiriqi: [
 				],
