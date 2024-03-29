@@ -2,7 +2,7 @@
 	<div>
 		<div class="container" :style='{"minHeight":"100vh","width":"100%","alignItems":"center","background":"url(http://codegen.caihongy.cn/20240126/6145e2c35351411a81426b78728fd386.jpg)no-repeat center center / cover","justifyContent":"center","display":"flex"}'>
 			<el-form v-if="pageFlag=='register'" :style='{"padding":"100px 20px 20px 50px","boxShadow":"0 1px 6px rgba(64, 158, 255, .8)","margin":"0","borderRadius":"10px","background":"#fff","width":"600px","position":"relative","height":"auto"}' ref="rgsForm" class="rgs-form" :model="rgsForm" :rules="rules">
-				<div v-if="true" :style='{"margin":"0 0 10px 0","color":"#fff","top":"0px","textAlign":"center","left":"0px","background":"rgb(51, 136, 203)","width":"100%","letterSpacing":"3px","lineHeight":"60px","fontSize":"24px","position":"absolute","fontWeight":"600"}' class="title">基于Python的我国县级帮扶信息管理系统（永顺县）注册</div>
+				<div v-if="true" :style='{"margin":"0 0 10px 0","color":"#fff","top":"0px","textAlign":"center","left":"0px","background":"rgb(51, 136, 203)","width":"100%","letterSpacing":"3px","lineHeight":"60px","fontSize":"24px","position":"absolute","fontWeight":"600"}' class="title">我国县级帮扶信息管理系统（永顺县）注册</div>
 				<button :style='{"border":"0","cursor":"pointer","padding":"0 10px","margin":"20px auto 5px","outline":"none","color":"#fff","borderRadius":"8px","background":"rgb(51, 136, 203)","display":"block","width":"80%","fontSize":"16px","height":"44px"}' type="button" class="r-btn" @click="login()">注册</button>
 				<div :style='{"cursor":"pointer","padding":"0 10%","color":"#2a67b2","display":"inline-block","lineHeight":"1","fontSize":"12px","textDecoration":"underline"}' class="r-login" @click="close()">已有账号，直接登录</div>
 			</el-form>

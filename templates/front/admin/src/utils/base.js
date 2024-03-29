@@ -9,7 +9,7 @@ const base = {
     },
     getProjectName(){
         return {
-            projectName: "基于Python的我国县级帮扶信息管理系统（永顺县）"
+            projectName: "我国县级帮扶信息管理系统（永顺县）"
         } 
     }
 }
