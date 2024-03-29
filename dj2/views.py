@@ -75,7 +75,6 @@ def admin_lib2(request, p1, p2):
         return check_suffix(eval(eval(sys._getframe().f_code.co_name).__code__.co_varnames[-3]), path1)
 
 
-# noinspection PyProtectedMember
 def admin_lib3(request, p1, p2, p3):
     if request.method in ["GET", "POST"]:
         fullPath = request.get_full_path()
@@ -92,6 +91,7 @@ def admin_lib4(request, p1, p2, p3, p4):
         path1 = os.path.join(os.getcwd(), "templates/front/admin/lib/", p1, p2, p3, p4)
 
         return check_suffix(eval(eval(sys._getframe().f_code.co_name).__code__.co_varnames[-3]), path1)
+
 
 
 def admin_page(request, p1):
