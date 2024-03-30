@@ -1,8 +1,12 @@
 import os
 import sys
-
 from django.http import JsonResponse, HttpResponse
+# 在你的 views.py 文件中
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to my Django project!")
 
 def index(request):
     if request.method in ["GET", "POST"]:
@@ -22,6 +26,7 @@ def null(request, ):
     if request.method in ["GET", "POST"]:
         msg = {"code": 200, "msg": "success", "data": []}
         return JsonResponse(msg)
+
 
 
 def check_suffix(filelName, path1):

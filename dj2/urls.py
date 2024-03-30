@@ -19,10 +19,18 @@ from django.urls import path,include,re_path
 from django.conf.urls import url
 from django.views.static import serve
 from django.views.generic import TemplateView
-
-
 from . import views
 from dj2.settings import dbName as schemaName
+# 在你的 urls.py 文件中
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name='home'),
+    # 其他URL模式...
+]
+
 
 urlpatterns = [
     path('xadmin/', admin.site.urls),
