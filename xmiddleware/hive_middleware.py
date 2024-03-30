@@ -1,6 +1,4 @@
-# coding:utf-8
-__author__ = "ila"
-
+'''
 from django.db import connection
 from django.utils.deprecation import MiddlewareMixin
 
@@ -24,4 +22,4 @@ class HiveMiddleware(MiddlewareMixin):
                 sql_list.append(raw_sql)
 
         hive_func(sql_list)
-        return response
+        return response'''
