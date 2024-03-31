@@ -13,7 +13,7 @@ if __name__ == "__main__":
     execute_from_command_line(sys.argv)
 '''这段代码是Django项目的典型启动脚本，通常保存在名为`manage.py`的文件中。这个脚本是Django项目的命令行界面工具，提供了许多与项目管理相关的命令，如启动开发服务器、创建应用、数据库迁移等。下面是对这段代码的详细解释：
 
-### 代码解释
+ ### 代码解释
 
 1. **导入模块**：
    - `import os` 和 `import sys`：导入Python的标准库`os`和`sys`模块，用于操作系统功能和访问与Python解释器相关的变量和函数。

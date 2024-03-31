@@ -581,7 +581,6 @@ def schemaName_spider(request, tableName):
         # Linux
         cmd = "cd /yykj/python/9999/spider${spiderSchemaName} && scrapy crawl "+tableName+"Spider -a databaseName=django6t3106w8"
         # Windows
-        # cmd = "cd C:\\test1\\spider && scrapy crawl " + tableName + "Spider -a databaseName=django6t3106w8"
         os.system(cmd)
 
         return JsonResponse(msg)

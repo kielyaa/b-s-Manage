@@ -3,6 +3,14 @@ import sys
 from django.http import JsonResponse, HttpResponse
 # 在你的 views.py 文件中
 
+# views.py
+
+from django.shortcuts import render
+
+def home(request):
+    # 确保模板路径正确，且模板文件存在于项目的templates目录下
+    return render(request, 'front/index.html')
+
 from django.http import HttpResponse
 
 def home(request):
