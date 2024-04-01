@@ -1,6 +1,3 @@
-# coding:utf-8
-__author__ = "ila"
-
 import copy, re, time
 import logging as log
 from django.db import models
@@ -124,7 +121,7 @@ class BaseModel(models.Model):
         except:
             datas=[]
         pages = p.num_pages
-        
+
         try:
             newData = self.to_list(datas, datas,model)
         except Exception as e:

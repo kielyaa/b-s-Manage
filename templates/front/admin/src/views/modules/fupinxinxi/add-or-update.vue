@@ -63,11 +63,11 @@
 				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="家庭住址" prop="jiatingzhuzhi">
 					<el-input v-model="ruleForm.jiatingzhuzhi" placeholder="家庭住址" readonly></el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="成员数量" prop="chengyuanshuliang">
-					<el-input v-model.number="ruleForm.chengyuanshuliang" placeholder="成员数量" clearable  :readonly="ro.chengyuanshuliang"></el-input>
+				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="家庭成员数量" prop="chengyuanshuliang">
+					<el-input v-model.number="ruleForm.chengyuanshuliang" placeholder="家庭成员数量" clearable  :readonly="ro.chengyuanshuliang"></el-input>
 				</el-form-item>
-				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="成员数量" prop="chengyuanshuliang">
-					<el-input v-model="ruleForm.chengyuanshuliang" placeholder="成员数量" readonly></el-input>
+				<el-form-item :style='{"margin":"0 0 20px 0"}' v-else class="input" label="家庭成员数量" prop="chengyuanshuliang">
+					<el-input v-model="ruleForm.chengyuanshuliang" placeholder="家庭成员数量" readonly></el-input>
 				</el-form-item>
 				<el-form-item :style='{"margin":"0 0 20px 0"}' class="input" v-if="type!='info'"  label="原年收入" prop="yuannianshouru">
 					<el-input-number v-model="ruleForm.yuannianshouru" placeholder="原年收入" :readonly="ro.yuannianshouru"></el-input-number>
@@ -510,7 +510,7 @@ export default {
 					this.$message.error(data.msg);
 				}
             });
-            this.pinkundengjiOptions = "绝对贫困,极度贫困,一般贫困,非贫困,相对贫困".split(',')
+            this.pinkundengjiOptions = "极度贫困,严重困难,中度贫困,一般贫困,边缘贫困".split(',')
             this.$http({
 				url: `option/fupinzhengce/fupinzhengce`,
 				method: "get"

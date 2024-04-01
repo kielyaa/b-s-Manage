@@ -153,7 +153,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="chengyuanshuliang"
-						label="成员数量">
+						label="家庭成员数量">
 						<template slot-scope="scope">
 							{{scope.row.chengyuanshuliang}}
 						</template>
@@ -872,7 +872,7 @@ import AddOrUpdate from "./add-or-update";
               this.$message.error(data.msg);
             }
           });
-          this.pinkundengjiOptions = "绝对贫困,极度贫困,一般贫困,非贫困,相对贫困".split(',')
+          this.pinkundengjiOptions = "极度贫困,严重困难,中度贫困,一般贫困,边缘贫困".split(',')
           this.$http({
             url: `option/fupinzhengce/fupinzhengce`,
             method: "get"
