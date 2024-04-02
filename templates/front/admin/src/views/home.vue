@@ -209,14 +209,14 @@ export default {
                 }
                 var option = {};
 				let titleObj = this.line.title
-				titleObj.text = '收入统计'
+				titleObj.text = '收支信息统计'
 				
                 const legendObj = this.line.legend
 				legendObj.data = [
-					'原年收入',
-					'原可支配收入',
-					'现年收入',
-					'现可支配收入',
+					'工作收入',
+					'其他收入',
+					'生活支出',
+					'可支配收入',
 				]
 				
 				let xAxisObj = this.line.xAxis
@@ -231,22 +231,22 @@ export default {
                     {
                         data: yAxis1,
                         type: 'line',
-                        name: '原年收入',
+                        name: '工作收入',
                     },
                     {
                         data: yAxis2,
                         type: 'line',
-                        name: '原可支配收入',
+                        name: '其他收入',
                     },
                     {
                         data: yAxis3,
                         type: 'line',
-                        name: '现年收入',
+                        name: '生活支出',
                     },
                     {
                         data: yAxis4,
                         type: 'line',
-                        name: '现可支配收入',
+                        name: '可支配收入',
                     },
                 ]
                 for(let i=0;i<seriesObj.length;i++){

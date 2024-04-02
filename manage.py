@@ -1,7 +1,7 @@
 import os
 import sys
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dj2.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bishePro.settings")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -20,9 +20,9 @@ if __name__ == "__main__":
 
 2. **设置Django配置**：
    ```python
-   os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dj2.settings")
+   os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bishePro.settings")
    ```
-   这行代码通过设置环境变量`DJANGO_SETTINGS_MODULE`来指定Django项目的设置文件（`settings.py`）。在这个例子中，`"dj2.settings"`指的是Django项目`dj2`下的`settings.py`文件。这个设置告诉Django项目应该使用哪个配置文件来运行。
+   这行代码通过设置环境变量`DJANGO_SETTINGS_MODULE`来指定Django项目的设置文件（`settings.py`）。在这个例子中，`"bishePro.settings"`指的是Django项目`bishePro`下的`settings.py`文件。这个设置告诉Django项目应该使用哪个配置文件来运行。
 
 3. **尝试导入Django相关模块**：
    ```python

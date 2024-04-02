@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.apps import apps, AppConfig
 # Register your models here.
 
-from dj2.settings import dbName as schemaName
+from bishePro.settings import dbName as schemaName
 from main.users_model import users
 from main.config_model import config
 

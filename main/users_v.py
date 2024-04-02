@@ -7,7 +7,7 @@ from .users_model import users
 from util.codes import *
 from util.auth import Auth
 import util.message as mes
-from dj2.settings import host,port,user,passwd,dbName,hasHadoop
+from bishePro.settings import host,port,user,passwd,dbName,hasHadoop
 
 def users_login(request):
     if request.method in ["POST", "GET"]:

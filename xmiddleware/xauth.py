@@ -5,7 +5,7 @@ from django.apps import apps
 
 from util.auth import Auth
 from util.codes import *
-from dj2.settings import dbName as schemaName
+from bishePro.settings import dbName as schemaName
 
 
 class Xauth(MiddlewareMixin):

@@ -3,7 +3,7 @@ from django.db import connection
 from django.utils.deprecation import MiddlewareMixin
 
 from util.hive_func import hive_func
-from dj2.settings import dbName
+from bishePro.settings import dbName
 
 class HiveMiddleware(MiddlewareMixin):
     def process_response(self, request, response):

@@ -68,9 +68,9 @@
 					</el-button>
 
 
-					<el-button class="btn18" v-if="isAuth('fupinxinxi','收入统计')" type="success" @click="chartDialog1()">
+					<el-button class="btn18" v-if="isAuth('fupinxinxi','收支信息统计')" type="success" @click="chartDialog1()">
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"14px","color":"#8b9ab3","height":"40px"}'></span>
-						收入统计
+						收支信息统计
 					</el-button>
 					<el-button class="btn18" v-if="isAuth('fupinxinxi','贫困等级统计')" type="success" @click="chartDialog2()">
 						<span class="icon iconfont icon-xihuan" :style='{"margin":"0 2px","fontSize":"14px","color":"#8b9ab3","height":"40px"}'></span>
@@ -162,7 +162,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="yuannianshouru"
-						label="原年收入">
+						label="工作收入">
 						<template slot-scope="scope">
 							{{scope.row.yuannianshouru}}
 						</template>
@@ -171,7 +171,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="yuankezhipeishouru"
-						label="原可支配收入">
+						label="其他收入">
 						<template slot-scope="scope">
 							{{scope.row.yuankezhipeishouru}}
 						</template>
@@ -180,7 +180,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="xiannianshouru"
-						label="现年收入">
+						label="生活支出">
 						<template slot-scope="scope">
 							{{scope.row.xiannianshouru}}
 						</template>
@@ -189,7 +189,7 @@
 					<!-- $column.hiden -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="xiankezhipeishouru"
-						label="现可支配收入">
+						label="可支配收入">
 						<template slot-scope="scope">
 							{{scope.row.xiankezhipeishouru}}
 						</template>
@@ -198,7 +198,7 @@
 					<!-- 5 -->
 					<el-table-column :resizable='true' :sortable='false'  
 						prop="kezhipeizhanbi"
-						label="可支配占比">
+						label="需要帮扶等级评定">
 						<template slot-scope="scope">
 							{{scope.row.kezhipeizhanbi}}
 						</template>
@@ -501,10 +501,10 @@ import AddOrUpdate from "./add-or-update";
                     },
                     legend: {
                         data: [
-							'原年收入',
-							'原可支配收入',
-							'现年收入',
-							'现可支配收入',
+							'工作收入',
+							'其他收入',
+							'生活支出',
+							'可支配收入',
 						]
                     },
                     tooltip: {
@@ -522,22 +522,22 @@ import AddOrUpdate from "./add-or-update";
                     {
                         data: yAxis1,
                         type: 'line',
-                        name: '原年收入',
+                        name: '工作收入',
                     },
                     {
                         data: yAxis2,
                         type: 'line',
-                        name: '原可支配收入',
+                        name: '其他收入',
                     },
                     {
                         data: yAxis3,
                         type: 'line',
-                        name: '现年收入',
+                        name: '生活支出',
                     },
                     {
                         data: yAxis4,
                         type: 'line',
-                        name: '现可支配收入',
+                        name: '可支配收入',
                     },
                     ]
                 };
@@ -872,7 +872,7 @@ import AddOrUpdate from "./add-or-update";
               this.$message.error(data.msg);
             }
           });
-          this.pinkundengjiOptions = "极度贫困,严重困难,中度贫困,一般贫困,边缘贫困".split(',')
+          this.pinkundengjiOptions = "极度贫困,严重困难,中度贫困,一般贫困,相对贫困".split(',')
           this.$http({
             url: `option/fupinzhengce/fupinzhengce`,
             method: "get"

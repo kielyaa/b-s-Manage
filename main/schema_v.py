@@ -14,8 +14,8 @@ from util.codes import *
 from util import message as mes
 from util.baidubce_api import BaiDuBce
 from util.locate import geocoding
-from dj2.settings import dbName as schemaName
-from dj2.settings import hasHadoop
+from bishePro.settings import dbName as schemaName
+from bishePro.settings import hasHadoop
 from django.db import connection
 from hdfs.client import Client
 def schemaName_cal(request, tableName, columnName):

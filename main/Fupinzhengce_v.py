@@ -19,7 +19,7 @@ from django.shortcuts import redirect
 from django.db.models import Q
 from util.baidubce_api import BaiDuBce
 from .config_model import config
-from dj2.settings import executor
+from bishePro.settings import executor
 from util.spark_func import spark_read_mysql
 
 

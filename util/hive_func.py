@@ -3,7 +3,7 @@ __author__ = 'ila'
 
 from impala.dbapi import connect
 
-from dj2.settings import dbName
+from bishePro.settings import dbName
 from util.convert_mysql_to_hive import ConvertMySQLToHive
 
 

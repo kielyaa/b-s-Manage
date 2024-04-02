@@ -1,6 +1,3 @@
-# coding:utf-8
-# author:ila
-
 import click
 from configparser import ConfigParser
 from util.configread import config_read  # 自定义模块，用于读取配置文件

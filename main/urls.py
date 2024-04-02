@@ -5,7 +5,7 @@ import os
 from django.urls import path
 from main import users_v, config_v, schema_v
 
-# from dj2.settings import dbName as schemaName
+# from bishePro.settings import dbName as schemaName
 
 # url规则列表
 urlpatterns = [
