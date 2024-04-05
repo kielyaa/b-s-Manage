@@ -1,5 +1,3 @@
-# coding:utf-8
-__author__ = "ila"
 
 import os
 from django.urls import path

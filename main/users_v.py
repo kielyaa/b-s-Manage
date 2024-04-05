@@ -1,5 +1,3 @@
-# coding:utf-8
-__author__ = "ila"
 
 from django.http import JsonResponse
 

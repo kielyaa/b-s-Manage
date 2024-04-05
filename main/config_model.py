@@ -1,6 +1,3 @@
-# coding:utf-8
-__author__ = "ila"
-
 from django.db import models
 
 from .model import BaseModel
