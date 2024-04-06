@@ -1,13 +1,9 @@
-
-
 import logging, os, time
-
 from django.http import JsonResponse
 from django.apps import apps
 from wsgiref.util import FileWrapper
 from django.http import HttpResponse,HttpResponseRedirect
 from django.shortcuts import redirect
-
 from .config_model import config
 from util.codes import *
 from util import message as mes

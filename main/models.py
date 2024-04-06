@@ -1,12 +1,6 @@
-
 from django.db import models
-
 from .model import BaseModel
-
 from datetime import datetime
-
-
-
 class sheng(BaseModel):
     __doc__ = u'''sheng'''
     __tablename__ = 'sheng'

@@ -1,8 +1,6 @@
-
 from django.utils.deprecation import MiddlewareMixin
 from django.http import JsonResponse
 from django.apps import apps
-
 from util.auth import Auth
 from util.codes import *
 from bishePro.settings import dbName as schemaName

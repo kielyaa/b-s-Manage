@@ -746,13 +746,13 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <collation id="223" parent="1" name="gb18030_unicode_520_ci">
       <Charset>gb18030</Charset>
     </collation>
-    <schema id="224" parent="1" name="django6t3106w8">
+    <schema id="224" parent="1" name="information_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="225" parent="1" name="django6t3106w8">
       <Current>1</Current>
       <LastIntrospectionLocalTimestamp>2024-04-05.13:29:49</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
-    </schema>
-    <schema id="225" parent="1" name="information_schema">
-      <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="226" parent="1" name="mysql">
       <CollationName>utf8_general_ci</CollationName>
@@ -778,36 +778,36 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="233" parent="1" name="mysql.sys">
       <Host>localhost</Host>
     </user>
-    <table id="234" parent="224" name="auth_user">
+    <table id="234" parent="225" name="auth_user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="235" parent="224" name="config">
+    <table id="235" parent="225" name="config">
       <Comment>配置文件</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="236" parent="224" name="fupinxinxi">
+    <table id="236" parent="225" name="fupinxinxi">
       <Comment>扶贫信息</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="237" parent="224" name="fupinzhengce">
+    <table id="237" parent="225" name="fupinzhengce">
       <Comment>扶贫政策</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="238" parent="224" name="sheng">
+    <table id="238" parent="225" name="sheng">
       <Comment>省</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="239" parent="224" name="systemintro">
+    <table id="239" parent="225" name="systemintro">
       <Comment>系统简介</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="240" parent="224" name="users">
+    <table id="240" parent="225" name="users">
       <Comment>用户表</Comment>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>

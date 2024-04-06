@@ -1,5 +1,3 @@
-#coding:utf-8
-__author__ = "ila"
 import json,copy
 from django.utils.deprecation import MiddlewareMixin
 from django.http import JsonResponse
